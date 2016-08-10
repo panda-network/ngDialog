@@ -87,6 +87,7 @@
         this.$get = ['$document', '$templateCache', '$compile', '$q', '$http', '$rootScope', '$timeout', '$window', '$controller', '$injector',
             function ($document, $templateCache, $compile, $q, $http, $rootScope, $timeout, $window, $controller, $injector) {
                 var $elements = [];
+                var document = $document[0];
 
                 var privateMethods = {
                     onDocumentKeydown: function (event) {
